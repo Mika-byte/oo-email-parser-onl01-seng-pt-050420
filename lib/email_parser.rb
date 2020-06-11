@@ -8,5 +8,6 @@ def initialize(parse)
 end
 
 def parse
-
+  @parse.plit(/.?\s/).uniq
+end
 end 
