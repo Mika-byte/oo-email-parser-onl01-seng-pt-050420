@@ -1,11 +1,14 @@
 
 class EmailAddressParser
   
-attr_accessor :parse
+attr_accessor :emails
 
-def initialize(parse)
-  @parse = parse
+def initialize(email)
+  @emails = email
 end
 
+def parse
+  emails.delete(',').split.uniq
+end
 
 end 
